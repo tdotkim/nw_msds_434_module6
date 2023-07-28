@@ -8,9 +8,9 @@ from flask import Flask, render_template, request, escape
 app = Flask(__name__)
 
 #ONLY FOR LOCAL USE
-CREDS = "C:\\Users\\TK\Desktop\\msds434-module6-dba29024def3.json"
-client = bigquery.Client.from_service_account_json(json_credentials_path=CREDS,project='msds434-module6')
-#client = bigquery.Client(project='msds434-module6')
+#CREDS = "C:\\Users\\TK\Desktop\\msds434-module6-dba29024def3.json"
+#client = bigquery.Client.from_service_account_json(json_credentials_path=CREDS,project='msds434-module6')
+client = bigquery.Client(project='msds434-module6')
 
 dset = 'module6'
 
