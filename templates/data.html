@@ -1,0 +1,17 @@
+<body>
+    {% for table in tables %}
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>{{ title }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ table|safe }}
+            </tbody>
+        </table>
+    {% endfor %}
+    <h1><a href="set_base_model">Back to the start</a></h1>
+</body>
+</html>
